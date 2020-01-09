@@ -7,7 +7,7 @@
 
 # Site Settings
 locale: "en-US"
-title: "Xuan Kan (阚璇))"
+title: "Xuan Kan (阚璇)"
 title_separator: "-"
 name: &name "Xuan Kan"
 description: &description "PhD Student@Emory University"
