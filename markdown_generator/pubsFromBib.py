@@ -24,6 +24,7 @@ import html
 import os
 import re
 
+
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
     "proceeding": {
