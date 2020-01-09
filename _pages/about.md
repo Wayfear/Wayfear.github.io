@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-About Me
-======
 
 I obtained my bachelor degree in Software Engineering at Tongji University, Shanghai, advised by Prof. Lin Zhang. Now, I am pursuitting my PhD degree at Emory University.
 
