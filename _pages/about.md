@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-I obtained my bachelor degree in Software Engineering at Tongji University, Shanghai, advised by Prof. Lin Zhang. Now, I am pursuitting my PhD degree at Emory University.
+I obtained my bachelor degree in Software Engineering at Tongji University, Shanghai, advised by Prof. Lin Zhang. After graduation, I used Neural Architecture Search to design efficient neural network at Sensetime. Now, I am pursuitting my PhD degree at Emory University.
 
 Research Interest
 ======
