@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I obtained my bachelor degree in Software Engineering at Tongji University, Shanghai, advised by [Prof. Lin Zhang](http://sse.tongji.edu.cn/linzhang/). During my undergradute study, my research focused on pervasive and trustworthy systems design and implementation using machine learning methods. After graduation, I interned at Smart City Group of SenseTime, working on improving neural network efficiency with Neural Architecture Search. Currently, I am pursuitting my PhD degree in computer science at Emory University.
+I obtained my bachelor degree in Software Engineering at Tongji University, Shanghai, advised by [Prof. Lin Zhang](http://sse.tongji.edu.cn/linzhang/). During my undergraduate study, my research focused on pervasive and trustworthy systems design and implementation using machine learning methods. After graduation, I interned at Smart City Group of SenseTime, working on improving neural network efficiency with Neural Architecture Search. Currently, I am pursuing my PhD degree in computer science at Emory University.
 
 Research Interest
 ======
