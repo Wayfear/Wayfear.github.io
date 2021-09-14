@@ -2,23 +2,21 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: <a href="https://www.cs.emory.edu/home/">Department of Computer Science, Emory University</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>N410</p>
+    <p>201 Dowman Drive</p>
+    <p>Atlanta, Georgia 30322</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+My name is Xuan Kan (阚璇). I obtained my bachelor degree in Software Engineering at Tongji University, Shanghai, advised by [Prof. Lin Zhang](http://sse.tongji.edu.cn/linzhang/). During my undergraduate study, my research focused on pervasive and trustworthy systems design and implementation using machine learning methods supervised by <a href="https://christopherlu.github.io/">Dr. Xiaoxuan Lu</a> at University of Oxford. Besides, I interned at Smart City Group of SenseTime, working on improving neural network efficiency with Neural Architecture Search. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Currently, I am pursuing my PhD degree in computer science at Emory University under the joint supervision of <a href="http://www.cs.emory.edu/~jyang71/">Dr. Carl Yang</a> and <a href="https://www.yingguo.us/">Dr. Ying Guo</a>. My research goal aims to designing more efficienct and interpretable machine learning algorithms for fMRI data, which can assist in neurobiological findings and mental disease diagnosis.
