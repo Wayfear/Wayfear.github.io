@@ -7,7 +7,7 @@ description: <a href="https://www.cs.emory.edu/home/">Department of Computer Sci
 profile:
   align: right
   image: prof_pic.jpg
-  img_desc: The one in pink is me \:)
+  img_desc: The one in pink is me : )
   address: >
     <p>N410, 201 Dowman Drive</p>
     <p>Atlanta, Georgia 30322</p>
