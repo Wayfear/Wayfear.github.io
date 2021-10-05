@@ -22,4 +22,4 @@ nav: true
 
 ## Paper Reading
 
-[/assets/pdf/graph-structure-learning-10-05-2021.pdf](2021-10-05: Graph Structure Learning For GNNs)
+[2021-10-05: Graph Structure Learning For GNNs](/assets/pdf/graph-structure-learning-10-05-2021.pdf)
