@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /Services/
+permalink: /services/
 title: services
 description: Teaching and Academic Services
 nav: true
