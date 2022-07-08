@@ -16,6 +16,7 @@ nav: true
 ## Academic Services
 
 #### PC Member
+- ICML 2022 Workshop on Interpretable Machine Learning in Healthcare
 - ICML 2021 Workshop on Interpretable Machine Learning in Healthcare
 - ICCV 2021 Workshop on Computer Vision for Automated Medical Diagnosis
 
@@ -23,7 +24,7 @@ nav: true
 ## Conference Reviewer:
 2022 Special Interest Group on Knowledge Discovery and Data Mining (SIGKDD)
 2022 SIAM International Conference on Data Mining (SDM)
-2022 TheWebConf (WWW)
+2022 The Web Conference (WWW)
 2022 Conference on Artificial Intelligence (AAAI)
 ## Journal Reviewer:
 IEEE Transactions on Big Data (Big Data)
