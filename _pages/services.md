@@ -5,14 +5,6 @@ title: services
 description: Teaching and Academic Services
 nav: true
 ---
-
-## Teaching
-
-### TA
-
-- CS170	Introduction to Computer Science
-- CS326 Analysis of Algorithms
-
 ## Academic Services
 
 ### PC Member
@@ -37,3 +29,11 @@ nav: true
 ## Paper Reading
 
 [2021-10-05: Graph Structure Learning For GNNs](/assets/pdf/graph-structure-learning-10-05-2021.pdf)
+
+
+## Teaching
+
+### TA
+
+- CS170	Introduction to Computer Science
+- CS326 Analysis of Algorithms
