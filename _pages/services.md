@@ -24,6 +24,7 @@ nav: true
 
 ## Conference Reviewer
 
+- 2022 The Conference on Information and Knowledge Management (CIKM)
 - 2022 Special Interest Group on Knowledge Discovery and Data Mining (SIGKDD)
 - 2022 SIAM International Conference on Data Mining (SDM)
 - 2022 The Web Conference (WWW)
