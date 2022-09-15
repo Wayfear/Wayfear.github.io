@@ -18,7 +18,7 @@
     {% else %}
     <div class="title">{{entry.title}}
       {% if entry.oral%}
-      <font color="red">(Oral)</font>
+      (<font color="red">Oral</font>)
       {% endif %}
     </div>
     <div class="author">
@@ -83,6 +83,10 @@
     </div>
     {% endif %}
 
+    <div class="abstract small">
+      {{entry.comment}}
+    </div>
+
     <div class="links">
       {% if entry.abstract %}
       <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
@@ -139,6 +143,8 @@
       <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
       {% endif %}
     </div>
+
+
 
     <!-- Hidden abstract block -->
     {% if entry.abstract %}
