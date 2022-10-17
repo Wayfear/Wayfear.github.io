@@ -22,15 +22,13 @@ nav: true
 - 2022 The Web Conference (WWW)
 - 2022 Conference on Artificial Intelligence (AAAI)
 
-## Workshop Organizers
-
-- The 1st International Workshop on Neural Network Models for Brain Connectome Analysis (BrainNN 2022), in conjunction with IEEE BigData 2022
-
 ## Journal Reviewer
 
 - IEEE Transactions on Big Data (Big Data)
 
+## Workshop Organizers
 
+- The 1st International Workshop on Neural Network Models for Brain Connectome Analysis (BrainNN 2022), in conjunction with IEEE BigData 2022
 ## Volunteer
 
 - 2022 The Conference on Information and Knowledge Management (CIKM)
