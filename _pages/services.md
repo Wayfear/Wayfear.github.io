@@ -26,9 +26,10 @@ nav: true
 
 - IEEE Transactions on Big Data (Big Data)
 
-## Workshop Organizers
+## Workshop Organizer
 
 - The 1st International Workshop on Neural Network Models for Brain Connectome Analysis (BrainNN 2022), in conjunction with IEEE BigData 2022
+
 ## Volunteer
 
 - 2022 The Conference on Information and Knowledge Management (CIKM)
