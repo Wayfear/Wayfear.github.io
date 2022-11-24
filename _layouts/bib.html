@@ -20,6 +20,9 @@
       {% if entry.oral%}
       (<font color="red">Oral</font>)
       {% endif %}
+      {% if entry.spotlight%}
+      (<font color="red">Spotlight</font>)
+      {% endif %}
     </div>
     <div class="author">
       {% for author in entry.author_array %}
