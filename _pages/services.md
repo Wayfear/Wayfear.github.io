@@ -15,6 +15,7 @@ nav: true
 
 ### Conference Reviewer
 
+- 2023 The Thirty-sixth Conference on Neural Information Processing Systems (NeurIPS)
 - 2023 The Web Conference (WWW)
 - 2023 Conference on Artificial Intelligence (AAAI)
 - 2022 The Conference on Information and Knowledge Management (CIKM)
@@ -25,6 +26,7 @@ nav: true
 
 ### Journal Reviewer
 
+- IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
 - IEEE Transactions on Big Data (Big Data)
 
 ### Workshop Organizer
