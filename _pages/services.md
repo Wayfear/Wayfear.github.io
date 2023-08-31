@@ -15,6 +15,7 @@ nav: true
 
 ### Conference Reviewer
 
+
 - 2023 The Thirty-sixth Conference on Neural Information Processing Systems (NeurIPS)
 - 2023 The Web Conference (WWW)
 - 2023 Conference on Artificial Intelligence (AAAI)
@@ -26,6 +27,7 @@ nav: true
 
 ### Journal Reviewer
 
+- IEEE Transactions on Knowledge and Data Engineering (TKDE)
 - IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
 - IEEE Transactions on Big Data (Big Data)
 
@@ -35,7 +37,9 @@ nav: true
 
 ### Volunteer
 
-- 2022 The Conference on Information and Knowledge Management (CIKM)
+- ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2023
+- The Conference on Information and Knowledge Management (CIKM) 2022
+- International Conference on Machine Learning (ICML) 2021
 
 <!-- ## Paper Reading
 
