@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-09-21T16:49:14-04:00</updated><id>/feed.xml</id><title type="html">blank</title><subtitle></subtitle><entry><title type="html">Automatically install pytorch-geometric</title><link href="/blog/2020/github-metadata/" rel="alternate" type="text/html" title="Automatically install pytorch-geometric" /><published>2020-09-28T17:01:00-04:00</published><updated>2020-09-28T17:01:00-04:00</updated><id>/blog/2020/github-metadata</id><content type="html" xml:base="/blog/2020/github-metadata/"><![CDATA[<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nv">TORCH</span><span class="o">=</span><span class="si">$(</span>python <span class="nt">-c</span> <span class="s2">"import torch; print(torch.__version__)"</span><span class="si">)</span>
+<span class="nv">CUDA</span><span class="o">=</span><span class="si">$(</span>python <span class="nt">-c</span> <span class="s2">"import torch; version=torch.version.cuda.replace('.','');print(f'cu{version}')"</span><span class="si">)</span>
+pip <span class="nb">install</span> <span class="nt">--no-index</span> torch-scatter <span class="nt">-f</span> https://pytorch-geometric.com/whl/torch-<span class="k">${</span><span class="nv">TORCH</span><span class="k">}</span>+<span class="k">${</span><span class="nv">CUDA</span><span class="k">}</span>.html
+pip <span class="nb">install</span> <span class="nt">--no-index</span> torch-sparse <span class="nt">-f</span> https://pytorch-geometric.com/whl/torch-<span class="k">${</span><span class="nv">TORCH</span><span class="k">}</span>+<span class="k">${</span><span class="nv">CUDA</span><span class="k">}</span>.html
+pip <span class="nb">install</span> <span class="nt">--no-index</span> torch-cluster <span class="nt">-f</span> https://pytorch-geometric.com/whl/torch-<span class="k">${</span><span class="nv">TORCH</span><span class="k">}</span>+<span class="k">${</span><span class="nv">CUDA</span><span class="k">}</span>.html
+pip <span class="nb">install</span> <span class="nt">--no-index</span> torch-spline-conv <span class="nt">-f</span> https://pytorch-geometric.com/whl/torch-<span class="k">${</span><span class="nv">TORCH</span><span class="k">}</span>+<span class="k">${</span><span class="nv">CUDA</span><span class="k">}</span>.html
+pip <span class="nb">install </span>torch-geometric
+</code></pre></div></div>]]></content><author><name>Xuan Kan</name></author><summary type="html"><![CDATA[#!/bin/bash TORCH=$(python -c "import torch; print(torch.__version__)") CUDA=$(python -c "import torch; version=torch.version.cuda.replace('.','');print(f'cu{version}')") pip install --no-index torch-scatter -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html pip install --no-index torch-sparse -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html pip install --no-index torch-cluster -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html pip install --no-index torch-spline-conv -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html pip install torch-geometric]]></summary></entry><entry><title type="html">The Trap of Static Variables in Pytorch</title><link href="/blog/2019/static-pytorch/" rel="alternate" type="text/html" title="The Trap of Static Variables in Pytorch" /><published>2019-05-22T00:00:00-04:00</published><updated>2019-05-22T00:00:00-04:00</updated><id>/blog/2019/static-pytorch</id><content type="html" xml:base="/blog/2019/static-pytorch/"><![CDATA[<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">torch</span>
+<span class="kn">from</span> <span class="n">torch</span> <span class="kn">import</span> <span class="n">nn</span>
+
+<span class="k">class</span> <span class="nc">A</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">()</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">p</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">ParameterList</span><span class="p">()</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">p</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="nc">Parameter</span><span class="p">(</span><span class="n">torch</span><span class="p">.</span><span class="nf">zeros</span><span class="p">(</span><span class="mi">5</span><span class="p">)))</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="nc">A</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">para</span> <span class="ow">in</span> <span class="n">a</span><span class="p">.</span><span class="nf">named_parameters</span><span class="p">():</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="c1"># oupput p.0
+</span>
+<span class="c1"># wrong method
+</span><span class="k">class</span> <span class="nc">AA</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">ParameterList</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">()</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">p</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="nc">Parameter</span><span class="p">(</span><span class="n">torch</span><span class="p">.</span><span class="nf">zeros</span><span class="p">(</span><span class="mi">5</span><span class="p">)))</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="nc">AA</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">para</span> <span class="ow">in</span> <span class="n">a</span><span class="p">.</span><span class="nf">named_parameters</span><span class="p">():</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="c1"># output nothing
+</span>
+<span class="c1"># right method
+</span><span class="k">class</span> <span class="nc">AA</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">ParameterList</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">()</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Parameter</span><span class="p">(</span><span class="n">torch</span><span class="p">.</span><span class="nf">zeros</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">p</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">register_parameter</span><span class="p">(</span><span class="sh">'</span><span class="s">parameter_name</span><span class="sh">'</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="nc">AA</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">para</span> <span class="ow">in</span> <span class="n">a</span><span class="p">.</span><span class="nf">named_parameters</span><span class="p">():</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+<span class="c1"># output parameter_name
+</span></code></pre></div></div>]]></content><author><name>Xuan Kan</name></author><summary type="html"><![CDATA[```python import torch from torch import nn]]></summary></entry></feed>

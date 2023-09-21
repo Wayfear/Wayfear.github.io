@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +10,7 @@
   Xuan  Kan
 
 
-  | blog
+  | Automatically install pytorch-geometric
 
 </title>
 <meta name="description" content="">
@@ -36,7 +35,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑🏼‍🎓</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/blog/2020/github-metadata/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -66,7 +65,47 @@
 <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
 
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    <script src="/assets/js/distillpub/overrides.js"></script>
+    
   </head>
+
+  <d-front-matter>
+    <script async type="text/json">{
+      "title": "Automatically install pytorch-geometric",
+      "description": "",
+      "published": "September 28, 2020",
+      "authors": [
+        
+        {
+          "author": "Xuan Kan",
+          "authorURL": "",
+          "affiliations": [
+            {
+              "name": "Emory University",
+              "url": ""
+            }
+          ]
+        }
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+  </d-front-matter>
 
   <body class="fixed-top-nav ">
 
@@ -103,8 +142,6 @@
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -196,35 +233,32 @@
 
     <!-- Content -->
 
-    <div class="container mt-5">
-      <div class="post">
+    <div class="post distill">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>Useful information for programming and research.</h2>
-  </div>
-
-
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">Automatically install pytorch-geometric</a></h3>
-        <p class="post-meta">September 28, 2020</p>
+      <d-title>
+        <h1>Automatically install pytorch-geometric</h1>
         <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/static-pytorch/">The Trap of Static Variables in Pytorch</a></h3>
-        <p class="post-meta">May 22, 2019</p>
-        <p></p>
-      </li>
-    
-  </ul>
+      </d-title>
 
-  
+      <d-byline></d-byline>
 
+      <d-article>
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nv">TORCH</span><span class="o">=</span><span class="si">$(</span>python <span class="nt">-c</span> <span class="s2">"import torch; print(torch.__version__)"</span><span class="si">)</span>
+<span class="nv">CUDA</span><span class="o">=</span><span class="si">$(</span>python <span class="nt">-c</span> <span class="s2">"import torch; version=torch.version.cuda.replace('.','');print(f'cu{version}')"</span><span class="si">)</span>
+pip <span class="nb">install</span> <span class="nt">--no-index</span> torch-scatter <span class="nt">-f</span> https://pytorch-geometric.com/whl/torch-<span class="k">${</span><span class="nv">TORCH</span><span class="k">}</span>+<span class="k">${</span><span class="nv">CUDA</span><span class="k">}</span>.html
+pip <span class="nb">install</span> <span class="nt">--no-index</span> torch-sparse <span class="nt">-f</span> https://pytorch-geometric.com/whl/torch-<span class="k">${</span><span class="nv">TORCH</span><span class="k">}</span>+<span class="k">${</span><span class="nv">CUDA</span><span class="k">}</span>.html
+pip <span class="nb">install</span> <span class="nt">--no-index</span> torch-cluster <span class="nt">-f</span> https://pytorch-geometric.com/whl/torch-<span class="k">${</span><span class="nv">TORCH</span><span class="k">}</span>+<span class="k">${</span><span class="nv">CUDA</span><span class="k">}</span>.html
+pip <span class="nb">install</span> <span class="nt">--no-index</span> torch-spline-conv <span class="nt">-f</span> https://pytorch-geometric.com/whl/torch-<span class="k">${</span><span class="nv">TORCH</span><span class="k">}</span>+<span class="k">${</span><span class="nv">CUDA</span><span class="k">}</span>.html
+pip <span class="nb">install </span>torch-geometric
+</code></pre></div></div>
 
-</div>
+      </d-article>
+
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
 
     </div>
 
@@ -245,28 +279,7 @@
 
   </body>
 
-  <!-- Bootsrap & MDB scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
-
-  
-<!-- Mansory & imagesLoaded -->
-<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
-
-
-  
-
-
-<!-- Medium Zoom JS -->
-<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
-<script src="/assets/js/zoom.js"></script>
-
-
-<!-- Load Common JS -->
-<script src="/assets/js/common.js"></script>
-
+  <d-bibliography src="/assets/bibliography/">
+  </d-bibliography>
 
 </html>
