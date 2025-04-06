@@ -10,6 +10,6 @@ children:
     - title: services
       permalink: /services/
     - title: CV
-      permalink: /assets/pdf/cv.pdf
+      permalink: /cv/
 
 ---
