@@ -2,31 +2,29 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Xuan Kan
+    # - name: Date of Birth
+    #   value: 27th January 1996
     - name: Languages
-      value: English, German
+      value: English, Chinese
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: PhD, Computer Science
+      institution: Emory University, GA, US
+      year: 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - My research goal aims to design more efficient and interpretable machine learning algorithms for fMRI data, which can assist in neurobiological findings and mental disease diagnosis.
+    # - title: Master, Computer Science
+    #   institution: Emory University GA, US
+    #   year: 2022
+    - title: Bachelor, Software Engineering
+      institution: Tongji University
+      year: 2018
       description:
-        - Description 1.
-        - Description 2.
+        - During my undergraduate study, my research focused on pervasive and trustworthy systems design and implementation using machine learning methods supervised by Prof. Xiaoxuan Lu at University of Oxford.
+        # - Description 2.
 
 - title: Experience
   type: time_table
