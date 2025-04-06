@@ -7,17 +7,18 @@ description: <a href="https://www.cs.emory.edu/home/">Department of Computer Sci
 profile:
   align: right
   image: prof_pic.jpg
+  image_circular: false # crops the image to make it circular
   img_desc: The one in pink is me :)
   address: >
-    <p>N410, 201 Dowman Drive</p>
-    <p>Atlanta, Georgia 30322</p>
+    <p>Menlo Park, CA</p>
 
-news: true  # includes a list of news items
+
+news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
-My name is Xuan Kan (阚璇). I obtained my bachelor's degree in Software Engineering at Tongji University, Shanghai, advised by [Prof. Lin Zhang](https://cslinzhang.gitee.io/home/). During my undergraduate study, my research focused on pervasive and trustworthy systems design and implementation using machine learning methods supervised by [Prof. Xiaoxuan Lu](https://christopherlu.github.io/) at University of Oxford.
+My name is Xuan Kan (阚璇). I am curent a Research Scientist in Meta Monetization GenAI, working on improving the geneated ads' quality and performance. I obtained my bachelor's degree in Software Engineering at Tongji University, Shanghai, advised by [Prof. Lin Zhang](https://cslinzhang.gitee.io/home/). During my undergraduate study, my research focused on pervasive and trustworthy systems design and implementation using machine learning methods supervised by [Prof. Xiaoxuan Lu](https://christopherlu.github.io/) at University of Oxford.
 <!-- Besides, I interned at Smart City Group of SenseTime, working on improving neural network efficiency with Neural Architecture Search.  -->
 
 Currently, I am pursuing my Ph.D. degree in computer science at Emory University under the joint supervision of [Prof. Carl Yang](http://www.cs.emory.edu/~jyang71/) and [Prof. Ying Guo](https://www.yingguo.us/). My research goal aims to design more efficient and interpretable machine learning algorithms for fMRI data, which can assist in neurobiological findings and mental disease diagnosis.
