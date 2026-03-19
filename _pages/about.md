@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-My name is Xuan Kan (阚璇). I am currently a Research Scientist in Meta Monetization GenAI, where I work on building next-generation advertising systems that serve billions of users through Generative AI technology. Specifically, I focus on improving the quality of AI-generated advertisements and enhancing overall advertising performance metrics.
+My name is Xuan Kan (阚璇). I am currently a Research Scientist at Meta Monetization GenAI, where I work on building ads creative agents to improve the quality of AI-generated advertisements and enhance overall advertising performance metrics through Reinforcement Learning.
 
 I recently completed my Ph.D. in Computer Science at Emory University under the joint supervision of [Prof. Carl Yang](http://www.cs.emory.edu/~jyang71/) and [Prof. Ying Guo](https://www.yingguo.us/). Through my doctoral research, I've been developing advanced computational methods to better analyze brain imaging data and contribute to the field of neuroinformatics. My research goal aims to design more efficient and interpretable machine learning algorithms for fMRI data, which can assist in neurobiological findings and mental disease diagnosis.
 
