@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Xuan Kan",
-    "label": "Research Scientist",
+    "label": "Senior Research Scientist",
     "image": "",
     "email": "kanxuan1996@gmail.com",
     "phone": "",
     "url": "https://kanxuan.live",
-    "summary": "Research Scientist at Meta Monetization GenAI working on reinforcement learning, language model evaluation and reward modeling, and multimodal LLMs.",
+    "summary": "Senior Research Scientist at Meta Monetization GenAI working on reinforcement learning, language model evaluation and reward modeling, and multimodal LLMs.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -25,7 +25,7 @@
   "work": [
     {
       "name": "Monetization GenAI, Meta",
-      "position": "Research Scientist",
+      "position": "Senior Research Scientist",
       "url": "",
       "startDate": "2024-05",
       "endDate": "Present",

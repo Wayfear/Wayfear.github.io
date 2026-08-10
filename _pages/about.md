@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-My name is Xuan Kan (阚璇). I am currently a Research Scientist at Meta Monetization GenAI, where I build ads creative agents and multimodal evaluation systems for AI-generated advertisements. My current research interests include reinforcement learning, language model evaluation and reward modeling, and multimodal LLMs.
+My name is Xuan Kan (阚璇). I am currently a Senior Research Scientist at Meta Monetization GenAI, where I build ads creative agents and multimodal evaluation systems for AI-generated advertisements. My current research interests include reinforcement learning, language model evaluation and reward modeling, and multimodal LLMs.
 
 I recently completed my Ph.D. in Computer Science at Emory University under the joint supervision of [Prof. Carl Yang](http://www.cs.emory.edu/~jyang71/) and [Prof. Ying Guo](https://www.yingguo.us/). Through my doctoral research, I've been developing advanced computational methods to better analyze brain imaging data and contribute to the field of neuroinformatics. My research goal aims to design more efficient and interpretable machine learning algorithms for fMRI data, which can assist in neurobiological findings and mental disease diagnosis.
 
